@@ -37,7 +37,6 @@ class Conta {
         console.log("Instruções gerais para o uso das contas.");
     }
 
-    // Getters e setters
     getNumeroConta() {
         return this.#numeroConta;
     }
@@ -105,12 +104,3 @@ class ContaPoupanca extends Conta {
         console.log(`Melhores investimentos para contas poupança: ${ContaPoupanca.melhoresInvestimentos.join(", ")}.`);
     }
 }
-
-// Exemplo de uso
-const contaCorrente = new ContaCorrente(1, 1000, "João", "Engenheiro", 500, 20);
-const contaCorrenteInfo = contaCorrente.criarConta();
-console.log(contaCorrenteInfo);
-
-const contaPoupanca = new ContaPoupanca(2, 500, "Maria", "Professor", 1.5, 3);
-const contaPoupancaInfo = contaPoupanca.criarConta();
-console.log(contaPoupancaInfo);
